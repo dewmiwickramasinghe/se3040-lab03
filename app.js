@@ -3,6 +3,14 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 const myModule = require('./my-module.js');
+const condition = true;
+const myPromise = new Promise((resolve, reject) => {
+    if (condition) {
+        resolve('Success!');
+    } else {
+        reject('Failure!');
+    }
+});
 
 console.log(myModule.myFunction()); //using module
 
@@ -40,3 +48,11 @@ https.get('https://jsonplaceholder.typicode.com/posts/1', (resp) => {
     console.log("Error: " + err.message);
 });
 
+//promises
+myPromise
+    .then((result) => {
+        console.log(result);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
