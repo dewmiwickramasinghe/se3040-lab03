@@ -2,7 +2,9 @@ console.log("Hello SE3040 Lab 03!");
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
+const myModule = require('./my-module.js');
 
+console.log(myModule.myFunction()); //using module
 
 // Read file
 fs.readFile('file.txt', 'utf8', function (err, data) {
