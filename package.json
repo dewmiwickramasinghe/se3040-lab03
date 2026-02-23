@@ -1,10 +1,11 @@
 {
   "name": "se3040-lab03",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lab 03 - Git collaboration and Node.js fundamentals",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -13,9 +14,14 @@
   "keywords": [
     "git",
     "add",
-    "."
+    ".",
+    "nodejs",
+    "collaboration"
   ],
-  "author": "",
+  "author": "Dewmi Wickramasinghe",
+  "contributors": [
+    "Ransiluni (IT23143654)"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/dewmiwickramasinghe/se3040-lab03/issues"
