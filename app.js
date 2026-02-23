@@ -12,7 +12,7 @@ const myPromise = new Promise((resolve, reject) => {
     }
 });
 
-
+console.log("Hello from Dewmi small change!");
 console.log(myModule.myFunction()); //using module
 
 // Read file
