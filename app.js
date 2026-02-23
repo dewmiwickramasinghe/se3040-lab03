@@ -26,8 +26,7 @@ fs.writeFile('file.txt', 'Hello World!', function (err) {
     if (err) throw err;
     console.log('File saved!');
 });
-
-//web server
+//web server for the lab
 http.createServer(function (req, res) {
     res.writeHead(200, {'Content-Type': 'text/html'});
     res.write('Hello World!');
